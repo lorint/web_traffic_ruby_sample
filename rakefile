@@ -1,0 +1,10 @@
+begin
+	require 'cucumber/rake/task'
+
+	# Allow us to run "rake features" from terminal, and show pretty colors
+	Cucumber::Rake::Task.new(:features) do |feature|
+	  feature.cucumber_opts = "--format pretty"
+	end
+rescue LoadError
+  puts "Cucumber is not available. In order to run features, you must: gem install cucumber"
+end

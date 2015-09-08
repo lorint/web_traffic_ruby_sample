@@ -1,0 +1,5 @@
+# No bundled stuff
+/vendor
+
+# No logfiles and tempfiles
+/tmp
